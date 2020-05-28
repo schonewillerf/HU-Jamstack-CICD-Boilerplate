@@ -1,17 +1,12 @@
 ---
 layout: layout/main.njk
-
+pagination:
+    data: contentful
+    size: 1
+    alias: card 
 title: Welcome to Jamstack!
 subtitle: Static Site Generator x Contentful Demo
 ---
-
-{#  Add above title on line 3 after configuring Contentful
-
-    pagination:
-        data: contentful
-        size: 1
-        alias: card 
-#}
 
 <div class="container">
     <div class="row justify-content-center">
