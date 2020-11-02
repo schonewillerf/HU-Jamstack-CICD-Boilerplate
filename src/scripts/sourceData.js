@@ -10,6 +10,7 @@ const client = contentful.createClient({
 
 client.getEntries({
     'content_type': 'card',
+    'order': 'sys.createdAt'
 })
 .then(entries => {
     const dir = './data';
