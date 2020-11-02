@@ -4,6 +4,7 @@
   "description": "Boilerplate for Jamstack and CICD code for a guest lecture at the HU",
   "scripts": {
     "start": "npm run data && npm test && npx eleventy && npm run copy-resources",
+    "build": "npm run data && npm test && npx eleventy && npm run copy-resources",
     "eleventy": "npm run copy-resources && npx eleventy --serve",
     "data": "node src/scripts/sourceData",
     "test": "cucumber-js",
@@ -12,9 +13,9 @@
   "author": "Gabriël Moawad",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "nunjucks-includeData": "0.0.9",
     "contentful": "^7.14.0",
-    "copyfiles": "^2.2.0"
+    "copyfiles": "^2.2.0",
+    "nunjucks-includeData": "0.0.9"
   },
   "devDependencies": {
     "cucumber": "^6.0.5"
